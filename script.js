@@ -7,6 +7,7 @@ form.addEventListener("submit", (event) => {
   for (const entry of data) {
     output = `${output}${entry[0]}=${entry[1]}\r`;
   }
+  console.log(output);
   log.innerText = output;
   event.preventDefault();
 });
