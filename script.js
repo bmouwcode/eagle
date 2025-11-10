@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     for (const entry of data) {
       output += `${entry[0]}=${entry[1]}\r`;
     }
-    log.innerText = "HI";
+    log.innerText = "HI" + data.get("options");
     event.preventDefault();
   });
 });
