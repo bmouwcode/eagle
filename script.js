@@ -7,9 +7,6 @@ form.addEventListener("submit", (event) => {
   for (const entry of data) {
     output = `${output}${entry[0]}=${entry[1]}\r`;
   }
-  if(data.get("yes1")="on") {
-    output = "FUN";
-  }
-  log.innerText = output;
+  log.innerText = data.get("yes1");
   event.preventDefault();
 });
