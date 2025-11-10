@@ -5,8 +5,10 @@ form.addEventListener("submit", (event) => {
   const data = new FormData(form);
   let output = "";
   for (const entry of data) {
-    // output = `${output}${entry[0]}=${entry[1]}\r`;
-    output.entry[0] = entry[1];
+    output = `${output}${entry[0]}=${entry[1]}\r`;
+  }
+  if(data.get("yes1")) {
+    output = "FUN";
   }
   log.innerText = output;
   event.preventDefault();
