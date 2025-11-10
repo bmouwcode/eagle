@@ -1,8 +1,6 @@
-const form = document.getElementById("mainForm");
-const log = document.getElementById("log");
 
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector("form");
+  const form = document.getElementById("mainForm");
   const log = document.getElementById("log");
   form.addEventListener("submit", (event) => {
     const data = new FormData(form);
@@ -10,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     for (const entry of data) {
       output += `${entry[0]}=${entry[1]}\r`;
     }
-    log.innerText = data.get("yes1");
+    log.innerText = data.entries();
     event.preventDefault();
   });
 });
