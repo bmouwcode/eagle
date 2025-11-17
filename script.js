@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const addP = document.getElementById("addP");
   const button = document.getElementById("something");
   const buttonTxt = document.getElementById("somethingtext");
+  let firstButton = true;
   form.addEventListener("submit", (event) => {
     const data = new FormData(form);
     let output = "";
@@ -46,8 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
   });
   button.addEventListener("click", (event) => {
-    if(buttonTxt.innerText = "") {
+    if(firstButton) {
       buttonTxt.innerText = "0";
+      firstButton = !firstButton;
     }
     buttonTxt.innerText = (parseInt(buttonTxt.innerText) + 1).toString();
   });
