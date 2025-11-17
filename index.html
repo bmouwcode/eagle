@@ -5,6 +5,9 @@
             p, h1 {
                 color: darkslateblue;
             }
+            .addDiv {
+                margin-bottom: 5px;
+            }
         </style>
     </head>
     <body>
@@ -72,11 +75,11 @@
             <fieldset>
                 <legend>Add two numbers.</legend>
 
-                <div>
-                    <input type="number" id="add1" name="add1">
+                <div id="addDiv">
+                    <input type="number" id="add1" name="add1" step="any" value="0" placeholder="gimme a number">
                 </div>
                 <div>
-                    <input type="number" id="add2" name="add2">
+                    <input type="number" id="add2" name="add2" step="any" value="0" placeholder="gimme another">
                 </div>
             </fieldset>
             <button type="submit">Submit</button>
