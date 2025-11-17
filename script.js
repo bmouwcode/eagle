@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const body = document.querySelector("body");
   const parag = document.getElementById("readP");
   const addP = document.getElementById("addP");
+  const button = document.getElementById("something");
+  const buttonTxt = document.getElementById("somethingtext");
   form.addEventListener("submit", (event) => {
     const data = new FormData(form);
     let output = "";
@@ -45,3 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+button.addEventListener("click", (event) => {
+  if(buttonTxt.innerText = "") {
+    buttonTxt.innerText = 0;
+  }
+  buttonTxt.innerText = parseInt(buttonTxt.innerText) + 1;
+});
