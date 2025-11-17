@@ -45,11 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     event.preventDefault();
   });
+  button.addEventListener("click", (event) => {
+    if(buttonTxt.innerText = "") {
+      buttonTxt.innerText = 0;
+    }
+    buttonTxt.innerText = parseInt(buttonTxt.innerText) + 1;
+  });
 });
 
-button.addEventListener("click", (event) => {
-  if(buttonTxt.innerText = "") {
-    buttonTxt.innerText = 0;
-  }
-  buttonTxt.innerText = parseInt(buttonTxt.innerText) + 1;
-});
