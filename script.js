@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const selectedOption = data.get("options");
     const readContent = data.get("readStuff");
-    const add1 = data.get("add1");
-    const add2 = data.get("add2");
+    const add1 = parseFloat(data.get("add1"));
+    const add2 = parseFloat(data.get("add2"));
     // if (selectedOption) {
     //   log.innerText = `HI ${selectedOption} HI2`;
     // } else {
