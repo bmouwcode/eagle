@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const log = document.getElementById("log");
   const body = document.querySelector("body");
   const parag = document.getElementById("readP");
+  const addP = document.getElementById("addP");
   form.addEventListener("submit", (event) => {
     const data = new FormData(form);
     let output = "";
@@ -14,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const selectedOption = data.get("options");
     const readContent = data.get("readStuff");
+    const add1 = data.get("add1");
+    const add2 = data.get("add2");
     // if (selectedOption) {
     //   log.innerText = `HI ${selectedOption} HI2`;
     // } else {
@@ -35,6 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     else if(readContent === "romeo") {
       parag.innerText = "But, soft! What light through yonder window breaks? It is the east, and Juliet is the sun. Arise, fair sun, and kill the envious moon, Who is already sick and pale with grief, That thou her maid art far more fair than she. Be not her maid, since she is envious; Her vestal livery is but sick and green, And none but fools do wear it; cast it off. It is my lady, O, it is my love! O, that she knew she were! She speaks, yet she says nothing: what of that? Her eye discourses; I will answer it. I am too bold, 'tis not to me she speaks: Two of the fairest stars in all the heaven, Having some business, do entreat her eyes To twinkle in their spheres till they return. What if her eyes were there, they in her head? The brightness of her cheek would shame those stars, As daylight doth a lamp; her eyes in heaven Would through the airy region stream so bright That birds would sing and think it were not night. See, how she leans her cheek upon her hand! O, that I were a glove upon that hand, That I might touch that cheek!";
     }
+
+    addP.innerText = add1 + add2;
 
     event.preventDefault();
   });
