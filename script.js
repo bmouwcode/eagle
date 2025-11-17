@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   button.addEventListener("click", (event) => {
     if(buttonTxt.innerText = "") {
-      buttonTxt.innerText = 0;
+      buttonTxt.innerText = "0";
     }
-    buttonTxt.innerText = parseInt(buttonTxt.innerText) + 1;
+    buttonTxt.innerText = (parseInt(buttonTxt.innerText) + 1).toString();
   });
 });
 
