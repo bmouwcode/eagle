@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
       firstButton = !firstButton;
     }
     buttonTxt.innerText = (parseInt(buttonTxt.innerText) + 1).toString();
-    switch(button.innerText){
+    switch(buttonTxt.innerText){
       case "10":
         reward.innerText = "Nice Job!";
       break;
