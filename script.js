@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const addP = document.getElementById("addP");
   const button = document.getElementById("something");
   const buttonTxt = document.getElementById("somethingtext");
+  const reward = document.getElementById("reward");
   let firstButton = true;
   form.addEventListener("submit", (event) => {
     const data = new FormData(form);
@@ -52,6 +53,34 @@ document.addEventListener("DOMContentLoaded", () => {
       firstButton = !firstButton;
     }
     buttonTxt.innerText = (parseInt(buttonTxt.innerText) + 1).toString();
+    switch(button.innerText){
+      case "10":
+        reward.innerText = "Nice Job!";
+      break;
+      case "100":
+        reward.innerText = "Good Dedication!";
+      break;
+      case "1000":
+        reward.innerText = "You are still clicking???";
+      break;
+      case "10000":
+        reward.innerText = "Are you sure you want to continue?";
+      break;
+      case "100000":
+        reward.innerText = "Nice job dedicating several hours to this."
+      break;
+      case "1000000":
+        reward.innerText = "Now you've spent days...";
+      break;
+      case "10000000":
+        reward.innerText = ":)";
+      break;
+      case "100000000":
+        reward.innerText = ":(";
+      break;
+      case "1000000000":
+        reward.innerText = "OK. You win. No more rewards for you. Click if you want, but at your own risk.";
+    }
   });
 });
 
