@@ -9,4 +9,13 @@ h1 {
     font-style: normal;
     font-size: 4rem;
 }
-
+.floatleft {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+.floatright {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
