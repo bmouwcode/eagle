@@ -9,6 +9,11 @@ h1 {
     font-style: normal;
     font-size: 4rem;
 }
+button {
+    background-color: saddlebrown;
+    color: sandybrown;
+    size: 2rem;
+}
 #floatleft {
     position: fixed;
     bottom: 20px;
