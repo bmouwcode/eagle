@@ -1,6 +1,8 @@
+/* background color! */
 body {
     background-color: sandybrown
 }
+/* Formatting for page titles */
 h1 {
     text-align: center;
     color: saddlebrown;
@@ -9,11 +11,13 @@ h1 {
     font-style: normal;
     font-size: 7.5rem;
 }
+/* general button formatting */
 button {
     background-color: saddlebrown;
     color: sandybrown;
     font-size: 6rem;
 }
+/* formatting for the forward/backward buttons */
 #floatleft {
     position: fixed;
     bottom: 20px;
@@ -24,6 +28,7 @@ button {
     bottom: 20px;
     right: 20px;
 }
+/* formatting to make the radio buttons in a grid */
 .radioGrid {
     display: grid;
     grid-template-columns: repeat(2, max-content);
@@ -31,6 +36,7 @@ button {
     justify-content: center;
     font-size: 1.5rem;
 }
+/* general text input formatting */
 .txtInput {
     text-align: center;
     padding-top: 20px;

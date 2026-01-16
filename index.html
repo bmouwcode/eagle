@@ -3,6 +3,7 @@
     <head>
         <!--A link to the style file-->
         <link rel = "stylesheet" href = "styles.css">
+        <!--import font for page headers-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
@@ -12,14 +13,17 @@
             <!--Setup page, with some basic prematch details to fill in-->
             <div id = "setup">
                 <h1><strong>PREMATCH</strong></h1>
+                <!--Input for the name of the scouter-->
                 <div class = "txtInput">
                     <label for = "name">Scouter: </label>
                     <input type = "text" id = "name" name = "name">
                 </div>
+                <!--Input for the number of the current match-->
                 <div class = "txtInput">
                     <label for = "matchNumber">Match Number: </label>
                     <input type = "number" id = "matchNumber" name = "matchNumber">
                 </div>
+                <!--Input for where on the field the robot you are scouting is-->
                 <div class="radioGrid">
                     <label>
                         <input type = "radio" name = "loc" value = "r1">
@@ -46,6 +50,7 @@
                         Blue 3
                     </label>
                 </div>
+                <!--Input for the team number of the robot you are scouting-->
                 <div class = "txtInput">
                     <label for = "teamNumber">Team Number: </label>
                     <input type = "number" id = "teamNumber" name = "teamNumber">
