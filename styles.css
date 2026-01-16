@@ -28,7 +28,7 @@ button {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 10px 20px;
-    text-align: center;
+    justify-content: center;
 }
 .txtInput {
     text-align: center;
