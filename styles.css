@@ -28,4 +28,8 @@ button {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px 20px;
+    text-align: center;
+}
+.txtInput {
+    text-align: center
 }

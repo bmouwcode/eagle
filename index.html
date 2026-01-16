@@ -12,10 +12,14 @@
             <!--Setup page, with some basic prematch details to fill in-->
             <div id = "setup">
                 <h1><strong>PREMATCH</strong></h1>
-                <label for = "name">Scouter: </label>
-                <input type = "text" id = "name" name = "name">
-                <label for = "matchNumber">Match Number: </label>
-                <input type = "number" id = "matchNumber" name = "matchNumber">
+                <div class = "txtInput">
+                    <label for = "name">Scouter: </label>
+                    <input type = "text" id = "name" name = "name">
+                </div>
+                <div class = "txtInput">
+                    <label for = "matchNumber">Match Number: </label>
+                    <input type = "number" id = "matchNumber" name = "matchNumber">
+                </div>
                 <div class="radioGrid">
                     <label>
                         <input type = "radio" name = "loc" value = "r1">
@@ -42,8 +46,10 @@
                         Blue 3
                     </label>
                 </div>
-                <label for = "teamNumber">Team Number: </label>
-                <input type = "number" id = "teamNumber" name = "teamNumber">
+                <div class = "txtInput">
+                    <label for = "teamNumber">Team Number: </label>
+                    <input type = "number" id = "teamNumber" name = "teamNumber">
+                </div>
             </div>
 
             <!--Auto page, for any scoring done in the autonomous period-->
