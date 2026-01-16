@@ -29,11 +29,11 @@ button {
     grid-template-columns: repeat(2, max-content);
     gap: 10px 20px;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .txtInput {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
