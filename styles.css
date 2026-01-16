@@ -7,7 +7,7 @@ h1 {
     font-family: "Rubik Marker Hatch", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 button {
     background-color: saddlebrown;
@@ -23,4 +23,9 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+.radioGrid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px 20px;
 }
