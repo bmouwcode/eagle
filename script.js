@@ -1,3 +1,5 @@
+//---Page cycling functionality---
+
 //List of pages on the main site
 let pages = ["setup", "auto", "teleop", "endgame", "export"];
 //the page the site is currently on
@@ -21,3 +23,31 @@ function cycleLeft() {
 //linking the functions to the buttons
 document.getElementById("floatright").onclick = cycleRight;
 document.getElementById("floatleft").onclick = cycleLeft;
+
+
+
+//---Scripting for auto fuel scored---
+
+//get elements for current value of counter
+let fuelAutoP = document.getElementById("counterAuto");
+let fuelAutoInp = document.getElementById("fuelAutoInput");
+//add one to counter
+function incFuelAuto() {
+    let value = parseInt(fuelAutoInp.value, 10);
+    value++;
+
+    fuelAutoInp.value = value;
+    fuelAutoP.textContent = value;
+}
+//subtract one from counter
+function decFuelAuto() {
+    let value = parseInt(fuelAutoInp.value, 10);
+    value--;
+    value = Math.max(0, value);
+
+    fuelAutoInp.value = value;
+    fuelAutoP.textContent = value;
+}
+//link funcs to buttons
+document.getElementById("plusAuto").onclick = incFuelAuto;
+document.getElementById("minusAuto").onclick = decFuelAuto;
