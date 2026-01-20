@@ -19,7 +19,7 @@ button {
 }
 /* smaller button class */
 .small {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 /* formatting for the forward/backward buttons */
 #floatleft {
@@ -50,6 +50,7 @@ button {
 /* styling for incremental counters */
 .incCounter {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 0.5rem;
 }
