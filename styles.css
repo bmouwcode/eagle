@@ -17,6 +17,10 @@ button {
     color: sandybrown;
     font-size: 6rem;
 }
+/* smaller button class */
+.small {
+    font-size: 0.5em;
+}
 /* formatting for the forward/backward buttons */
 #floatleft {
     position: fixed;
