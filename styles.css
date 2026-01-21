@@ -53,7 +53,7 @@ button {
 .incCounter {
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
+    align-items: center;
     gap: 0.5rem;
 }
 /* make sure all items in counter are inline */
@@ -64,8 +64,9 @@ button {
 .checkbox {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 /* make checkbox bigger */
 .checkbox input {
-    font-size: 3rem;
+    transform: scale(1.5, 1.5);
 }
