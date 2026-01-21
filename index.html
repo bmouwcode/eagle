@@ -60,6 +60,7 @@
             <!--Auto page, for any scoring done in the autonomous period-->
             <div id = "auto" hidden>
                 <h1><strong>AUTONOMOUS</strong></h1>
+                <!--Input for the amount of fuel scored in the hub during auto-->
                 <div class = "incCounter formItem">
                     <span>Fuel Scored:</span>
                     <button type = "button" class = "small" id = "minusAuto">-</button>
@@ -67,6 +68,11 @@
                     <button type = "button" class = "small" id = "plusAuto">+</button>
                     <input type = "hidden" name = "fuelAuto" id = "fuelAutoInput" value = "0">
                 </div>
+                <div class = "checkbox formItem">
+                    <label for = "climbAuto">Climbed?</label>
+                    <input type = "checkbox" name = "climbAuto">
+                </div>
+
             </div>
 
             <!--Teleop page, for main section of game-->
