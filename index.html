@@ -14,17 +14,17 @@
             <div id = "setup">
                 <h1><strong>PREMATCH</strong></h1>
                 <!--Input for the name of the scouter-->
-                <div class = "txtInput">
+                <div class = "txtInput formItem">
                     <label for = "name">Scouter: </label>
                     <input type = "text" id = "name" name = "name">
                 </div>
                 <!--Input for the number of the current match-->
-                <div class = "txtInput">
+                <div class = "txtInput formItem">
                     <label for = "matchNumber">Match Number: </label>
                     <input type = "number" id = "matchNumber" name = "matchNumber">
                 </div>
                 <!--Input for where on the field the robot you are scouting is-->
-                <div class="radioGrid">
+                <div class="radioGrid formItem">
                     <label>
                         <input type = "radio" name = "loc" value = "r1">
                         Red 1
@@ -51,7 +51,7 @@
                     </label>
                 </div>
                 <!--Input for the team number of the robot you are scouting-->
-                <div class = "txtInput">
+                <div class = "txtInput formItem">
                     <label for = "teamNumber">Team Number: </label>
                     <input type = "number" id = "teamNumber" name = "teamNumber">
                 </div>
@@ -60,7 +60,7 @@
             <!--Auto page, for any scoring done in the autonomous period-->
             <div id = "auto" hidden>
                 <h1><strong>AUTONOMOUS</strong></h1>
-                <div class = "incCounter">
+                <div class = "incCounter formItem">
                     <span>Fuel Scored:</span>
                     <button type = "button" class = "small" id = "minusAuto">-</button>
                     <p id = "counterAuto">0</p>

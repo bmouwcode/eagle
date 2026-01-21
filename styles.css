@@ -32,20 +32,22 @@ button {
     bottom: 20px;
     right: 20px;
 }
+/* general class for form item sizing */
+.formItem {
+    font-size: 1.5rem;
+}
 /* formatting to make the radio buttons in a grid */
 .radioGrid {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 10px 20px;
     justify-content: center;
-    font-size: 1.5rem;
 }
 /* general text input formatting */
 .txtInput {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 1.5rem;
 }
 /* styling for incremental counters */
 .incCounter {
