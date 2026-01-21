@@ -51,3 +51,30 @@ function decFuelAuto() {
 //link funcs to buttons
 document.getElementById("plusAuto").onclick = incFuelAuto;
 document.getElementById("minusAuto").onclick = decFuelAuto;
+
+
+//---Scripting for tele fuel scored---
+
+//get elements for current value of counter
+let fuelTeleP = document.getElementById("counterTele");
+let fuelTeleInp = document.getElementById("fuelTeleInput");
+//add one to counter
+function incFuelTele() {
+    let value = parseInt(fuelTeleInp.value, 10);
+    value++;
+
+    fuelTeleInp.value = value;
+    fuelTeleP.textContent = value;
+}
+//subtract one from counter
+function decFuelTele() {
+    let value = parseInt(fuelTeleInp.value, 10);
+    value--;
+    value = Math.max(0, value);
+
+    fuelTeleInp.value = value;
+    fuelTeleP.textContent = value;
+}
+//link funcs to buttons
+document.getElementById("plusTele").onclick = incFuelTele;
+document.getElementById("minusTele").onclick = decFuelTele;

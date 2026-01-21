@@ -78,6 +78,14 @@
             <!--Teleop page, for main section of game-->
             <div id = "teleop" hidden>
                 <h1><strong>TELEOPERATED</strong></h1>
+                <!--Input for the amount of fuel scored in the hub during teleop-->
+                <div class = "incCounter formItem">
+                    <span>Fuel Scored:</span>
+                    <button type = "button" class = "small" id = "minusTele">-</button>
+                    <p id = "counterTele">0</p>
+                    <button type = "button" class = "small" id = "plusTele">+</button>
+                    <input type = "hidden" name = "fuelTele" id = "fuelTeleInput" value = "0">
+                </div>
             </div>
 
             <!--Endgame page, for end-of-match goals-->
