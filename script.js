@@ -88,10 +88,6 @@ function exportData() {
     const form = document.getElementById("match");
     const formData = new FormData(form);
 
-    if(!formData.has("climbAuto")) {
-        formData.append("climbAuto", "off");
-    }
-
     for(let [key, value] of formData.entries()) {
         data.push(value);
     }

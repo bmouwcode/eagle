@@ -71,6 +71,7 @@
                 </div>
                 <div class = "checkbox formItem">
                     <label for = "climbAuto">Climbed?</label>
+                    <input type = "hidden" name = "climbAuto" value = "off">
                     <input type = "checkbox" id = "climbAuto" name = "climbAuto">
                 </div>
 
@@ -111,8 +112,10 @@
         <!--Export page, for getting the data from this computer to the next-->
         <div id = "export" hidden>
             <h1>EXPORT</h1>
-            <button class = "small center-text" type = "button" id = "copy">Copy Data</button>
-            <p id = "copyAlert"></p>
+            <div id = "copyItems">
+                <button class = "small" type = "button" id = "copy">Copy Data</button>
+                <p id = "copyAlert"></p>
+            </div>
         </div>
         <div id = "floatright">
             <button type = "button" id = "nextPage">&gt;</button>
