@@ -21,6 +21,9 @@ button {
 .small {
     font-size: 2rem;
 }
+.center-text {
+    text-align: center;
+}
 /* formatting for the forward/backward buttons */
 #floatleft {
     position: fixed;
