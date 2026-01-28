@@ -1,7 +1,7 @@
 //---Page cycling functionality---
 
 //List of pages on the main site
-let pages = ["setup", "auto", "teleop", "endgame", "export"];
+let pages = ["setup", "auto", "teleop", "export"];
 //the page the site is currently on
 let currPage = "setup";
 //function to move one page right
