@@ -55,6 +55,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    padding-bottom: 20px;
 }
 /* make sure all items in counter are inline */
 .incCounter p {
