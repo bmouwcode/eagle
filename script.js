@@ -55,6 +55,7 @@ document.getElementById("plusAuto").onclick = incFuelAuto;
 document.getElementById("minusAuto").onclick = decFuelAuto;
 
 
+
 //---Scripting for tele fuel scored---
 
 //get elements for current value of counter
@@ -80,6 +81,10 @@ function decFuelTele() {
 //link funcs to buttons
 document.getElementById("plusTele").onclick = incFuelTele;
 document.getElementById("minusTele").onclick = decFuelTele;
+
+
+
+//---Scripting for copy button---
 
 //Export data through a copy button.
 function exportData() {

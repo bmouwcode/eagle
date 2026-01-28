@@ -32,10 +32,14 @@ button {
     bottom: 20px;
     right: 20px;
 }
+/* formatting for the copy button */
 #copyItems {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
+
 /* general class for form item sizing */
 .formItem {
     font-size: 1.5rem;
