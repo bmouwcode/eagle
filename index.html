@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
+        <title>Eagle</title>
         <!--A link to the style file-->
         <link rel = "stylesheet" href = "styles.css">
         <!--import font for page headers-->
@@ -12,7 +13,7 @@
         <form id = "match">
             <!--Setup page, with some basic prematch details to fill in-->
             <div id = "setup">
-                <h1><strong>PREMATCH</strong></h1>
+                <h1>PREMATCH</h1>
                 <!--Input for the name of the scouter-->
                 <div class = "txtInput formItem">
                     <label for = "name">Scouter: </label>
@@ -59,7 +60,7 @@
 
             <!--Auto page, for any scoring done in the autonomous period-->
             <div id = "auto" hidden>
-                <h1><strong>AUTONOMOUS</strong></h1>
+                <h1>AUTONOMOUS</h1>
                 <!--Input for the amount of fuel scored in the hub during auto-->
                 <div class = "incCounter formItem">
                     <span>Fuel Scored:</span>
@@ -70,14 +71,14 @@
                 </div>
                 <div class = "checkbox formItem">
                     <label for = "climbAuto">Climbed?</label>
-                    <input type = "checkbox" name = "climbAuto">
+                    <input type = "checkbox" id = "climbAuto" name = "climbAuto">
                 </div>
 
             </div>
 
             <!--Teleop page, for main section of game-->
             <div id = "teleop" hidden>
-                <h1><strong>TELEOPERATED</strong></h1>
+                <h1>TELEOPERATED</h1>
                 <!--Input for the amount of fuel scored in the hub during teleop-->
                 <div class = "incCounter formItem">
                     <span>Fuel Scored:</span>
@@ -97,27 +98,27 @@
                         Level 1
                     </label>
                     <label>
-                        <input type = "radio" name = "climbTele" value = "1">
+                        <input type = "radio" name = "climbTele" value = "2">
                         Level 2
                     </label>
                     <label>
-                        <input type = "radio" name = "climbTele" value = "1">
+                        <input type = "radio" name = "climbTele" value = "3">
                         Level 3
                     </label>
                 </div>
             </div>
-
-            <!--Export page, for getting the data from this computer to the next-->
-            <div id = "export" hidden>
-                <h1><strong>EXPORT</strong></h1>
-            </div>
-            <div id = "floatright">
-                <button type = "button">&gt;</button>
-            </div>
-            <div id = "floatleft">
-                <button type = "button">&lt;</button>
-            </div>
         </form>
+        <!--Export page, for getting the data from this computer to the next-->
+        <div id = "export" hidden>
+            <h1>EXPORT</h1>
+        </div>
+        <div id = "floatright">
+            <button type = "button" id = "nextPage">&gt;</button>
+        </div>
+        <div id = "floatleft">
+            <button type = "button" id = "prevPage">&lt;</button>
+        </div>
+        
         <!--All the scripts are in script.js, as seen-->
         <script src="script.js"></script>
     </body>

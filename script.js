@@ -6,23 +6,25 @@ let pages = ["setup", "auto", "teleop", "export"];
 let currPage = "setup";
 //function to move one page right
 function cycleRight() {
-    if(pages.indexOf(currPage) < pages.length - 1) {
+    let idx = pages.indexOf(currPage);
+    if(idx < pages.length - 1) {
         document.getElementById(currPage).hidden = true;
-        currPage = pages[pages.indexOf(currPage) + 1];
+        currPage = pages[idx + 1];
         document.getElementById(currPage).hidden = false;
     }
 }
 //funtion to move one page left
 function cycleLeft() {
-    if(pages.indexOf(currPage) > 0) {
+    let idx = pages.indexOf(currPage);
+    if(idx > 0) {
         document.getElementById(currPage).hidden = true;
-        currPage = pages[pages.indexOf(currPage) - 1];
+        currPage = pages[idx - 1];
         document.getElementById(currPage).hidden = false;
     }
 }
 //linking the functions to the buttons
-document.getElementById("floatright").onclick = cycleRight;
-document.getElementById("floatleft").onclick = cycleLeft;
+document.getElementById("nextPage").onclick = cycleRight;
+document.getElementById("prevPage").onclick = cycleLeft;
 
 
 
