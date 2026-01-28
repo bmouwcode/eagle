@@ -86,11 +86,25 @@
                     <button type = "button" class = "small" id = "plusTele">+</button>
                     <input type = "hidden" name = "fuelTele" id = "fuelTeleInput" value = "0">
                 </div>
-            </div>
-
-            <!--Endgame page, for end-of-match goals-->
-            <div id = "endgame" hidden>
-                <h1><strong>ENDGAME</strong></h1>
+                <!--Input for climb level, only endgame-->
+                <div class = "radioGrid formItem">
+                    <label>
+                        <input type = "radio" name = "climbTele" value = "0">
+                        No Climb
+                    </label>
+                    <label>
+                        <input type = "radio" name = "climbTele" value = "1">
+                        Level 1
+                    </label>
+                    <label>
+                        <input type = "radio" name = "climbTele" value = "1">
+                        Level 2
+                    </label>
+                    <label>
+                        <input type = "radio" name = "climbTele" value = "1">
+                        Level 3
+                    </label>
+                </div>
             </div>
 
             <!--Export page, for getting the data from this computer to the next-->
