@@ -80,3 +80,25 @@ function decFuelTele() {
 //link funcs to buttons
 document.getElementById("plusTele").onclick = incFuelTele;
 document.getElementById("minusTele").onclick = decFuelTele;
+
+//Export data through a copy button.
+function exportData() {
+    const data = [];
+
+    const form = document.getElementById("match");
+    const formData = new FormData(form);
+
+    for(let [key, value] of formData.entries()) {
+        data.push(value);
+    }
+
+    const output = data.join(",");
+
+    navigator.clipboard.writeText(output).then(() => {
+        document.getElementById("copyAlert").textContent = "Copied!";
+    }).catch(() => {
+        document.getElementById("copyAlert").textContent = "Copy failed";
+    });
+}
+//link to copy button
+document.getElementById("copy").onclick = exportData;
