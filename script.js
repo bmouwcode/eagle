@@ -88,16 +88,28 @@ document.getElementById("minusTele").onclick = decFuelTele;
 
 //Export data through a copy button.
 function exportData() {
-    const data = [];
-
     const form = document.getElementById("match");
     const formData = new FormData(form);
 
-    for(let [key, value] of formData.entries()) {
-        data.push(value);
+    if (!formData.has("climbAuto")) formData.append("climbAuto", "off");
+
+    const dataObj = {};
+    for (let [key, value] of formData.entries()) {
+        dataObj[key] = value;
     }
 
-    const output = data.join(",");
+    const dataArray = [
+        dataObj.name,
+        dataObj.matchNumber,
+        dataObj.loc,
+        dataObj.teamNumber,
+        dataObj.fuelAuto,
+        dataObj.climbAuto,
+        dataObj.fuelTele,
+        dataObj.climbTele
+    ];
+
+    const output = dataArray.join(",");
 
     navigator.clipboard.writeText(output).then(() => {
         document.getElementById("copyAlert").textContent = "Copied!";
@@ -105,5 +117,6 @@ function exportData() {
         document.getElementById("copyAlert").textContent = "Copy failed";
     });
 }
+
 //link to copy button
 document.getElementById("copy").onclick = exportData;
